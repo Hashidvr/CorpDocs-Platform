@@ -1,14 +1,12 @@
 # CorpDocs-Platform
-# CorpDocs-Platform
 # 📘 CorpDocs – A Collaborative Knowledge Base Platform
 
 CorpDocs is a full-stack web application that serves as a modern, lightweight alternative to Confluence. Designed for team collaboration, CorpDocs enables users to create, manage, share, and search rich-text documents with built-in user mentions, access control, and version history.
 
-This project was built as part of an assignment for the Associate Software Engineer position at **Frigga Cloud Labs**.
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Live working video demo
 
 > 💡 https://drive.google.com/file/d/1nZK-_kEfhNSn4cHT2nROtUKqI9xNr9Xy/view?usp=sharing 
 
@@ -16,14 +14,14 @@ This project was built as part of an assignment for the Associate Software Engin
 
 ## 🔧 Tech Stack
 
-| Layer     | Technology                        |
-|-----------|-----------------------------------|
-| Frontend  | React, Tailwind CSS, React Quill, React Router DOM |
-| Backend   | Django, Django REST Framework, JWT Auth |
-| Database  | SQLite (for development)          |
-| Auth      | JWT (via `rest_framework_simplejwt`) |
-| Email     | Gmail SMTP (for password reset & mentions) |
-| Dev Tool  | Vite                              |
+| Layer     | Technology                        
+|-----------|-----------------------------------
+| Frontend  | React, Tailwind CSS, React Quill, React Router DOM 
+| Backend   | Django, Django REST Framework, JWT Auth 
+| Database  | SQLite (for development)          
+| Auth      | JWT (via `rest_framework_simplejwt`) 
+| Email     | Gmail SMTP (for password reset & mentions) 
+| Dev Tool  | Vite                              
 
 ---
 
@@ -81,7 +79,7 @@ This project was built as part of an assignment for the Associate Software Engin
 ```bash
 # Clone the repository
 git clone https://github.com/Hashidvr/CorpDocs-Platform
-cd CorpDocs-Platform
+cd /..corpdocs-backend
 
 # Create and activate virtual environment
 python -m venv venv
@@ -91,6 +89,7 @@ source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 
 # Run migrations
+python manage.py makemigrations
 python manage.py migrate
 
 # Start the server
